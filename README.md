@@ -1,5 +1,8 @@
 # Console-Log-Explainer
-Console Log Explainer: A Framework for Generating Automated Explanations using LLM
+*Console Log Explainer: A Framework for Generating Automated Explanations using LLM*
+
+![image](https://github.com/shakib-sadat/Console-Log-Explainer/assets/62327880/8f49d42f-cbe3-46bf-84c8-b4d945fb45b6)
+
 
 Log analysis is challenging due to the unstructured nature of log messages. Most prior methods are limited to specific log formats and require substantial labeled data. Recent natural language processing techniques, such as large language models (LLMs), show promise for automated log analysis. This study aims to develop a generalized framework for constructing LLM-based systems to explain technical console logs across applications. The paper introduces a novel framework to construct LLM-based log explanation systems and proposes a model combining Falcon-7b LLM with a fine-tuned log interpretation adapter module. An original dataset with over 100 error logs spanning 10 applications was created to enable training and benchmarking. The proposed model leverages Falcon-7B with a fine-tuned adapter using parameter-efficient fine-tuning on the curated log dataset. Human evaluation and inter-rater reliability quantification compared log explanations from the model and baselines.
 
@@ -18,6 +21,16 @@ The dataset consists of three columns: Language, Console Error Message and Expla
 The experiments were conducted in a cloud platform named "Vast.ai" [2]. Performing any experiment using LLM requires large amount of computational resources. For this reason, we performed the experiments using a RTX A6000 GPU with GPU RAM of 48 GB and disk capacity of 46 GB. We used PyTorch == 2.1.2, Transformers == 4.36.2, PEFT == 0.7.1 to prepare the proposed model and perform other experiments. By using peft, trainable the model were reduced to 4718592 which is 0.07% of the base model parameter. This allowed selective fine-tuning on only the parameters most relevant for the log explanation task rather than tuning the entire gigantic model, which is computationally demanding. The proposed model was trained for 300 epochs with learning rate = 1e-4, optimizer = "paged adamw 8bit", lr scheduler type = 'cosine', warm-up ratio = 0.05.
 
 # ✔️ Model Inference
+*Inference on seen errors:*
+
+![image](https://github.com/shakib-sadat/Console-Log-Explainer/assets/62327880/3306d6f8-3f10-484e-b99b-fc2fb0e7fbc9)
+
+![image](https://github.com/shakib-sadat/Console-Log-Explainer/assets/62327880/a017c896-f8ec-4b9f-bd8d-40046992ba3c)
+
+*Inference on unseen errors:*
+
+![image](https://github.com/shakib-sadat/Console-Log-Explainer/assets/62327880/891d90b8-d970-4a04-8b3f-3e8c033b9ec5)
+
 
 # References
 1. https://huggingface.co/tiiuae/falcon-7b-instruct
