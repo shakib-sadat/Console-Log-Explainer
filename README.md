@@ -1,6 +1,7 @@
 # Console-Log-Explainer
 *✔️ Accepted at the 2nd International Conference on Artificial Intelligence, Blockchain, and Internet of Things (AIBThings), Central Michigan University (CMU), USA*
-**Console Log Explainer: A Framework for Generating Automated Explanations using LLM**
+
+## Console Log Explainer: A Framework for Generating Automated Explanations using LLM
 
 ![image](https://github.com/shakib-sadat/Console-Log-Explainer/assets/62327880/8f49d42f-cbe3-46bf-84c8-b4d945fb45b6)
 
