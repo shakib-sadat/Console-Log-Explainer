@@ -1,5 +1,6 @@
 # Console-Log-Explainer
-*Console Log Explainer: A Framework for Generating Automated Explanations using LLM*
+*✔️ Accepted at the 2nd International Conference on Artificial Intelligence, Blockchain, and Internet of Things (AIBThings), Central Michigan University (CMU), USA*
+**Console Log Explainer: A Framework for Generating Automated Explanations using LLM**
 
 ![image](https://github.com/shakib-sadat/Console-Log-Explainer/assets/62327880/8f49d42f-cbe3-46bf-84c8-b4d945fb45b6)
 
@@ -30,6 +31,7 @@ The experiments were conducted in a cloud platform named "Vast.ai" [2]. Performi
 *Inference on unseen errors:*
 
 ![image](https://github.com/shakib-sadat/Console-Log-Explainer/assets/62327880/891d90b8-d970-4a04-8b3f-3e8c033b9ec5)
+
 
 
 # References
