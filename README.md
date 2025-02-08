@@ -1,6 +1,7 @@
 # Console-Log-Explainer
 *✔️ Published at the 2nd International Conference on Artificial Intelligence, Blockchain, and Internet of Things (AIBThings), Central Michigan University (CMU), USA*
-[IEEE Proceedings](10.1109/AIBThings63359.2024.10863559)
+
+**[IEEE Proceedings](https://ieeexplore.ieee.org/document/10863559)**
 
 ## Console Log Explainer: A Framework for Generating Automated Explanations using LLM
 
